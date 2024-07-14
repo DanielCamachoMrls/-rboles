@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(245, 233, 233);
+}
+.form-container{
+    height: 32px;
+}
+h1 {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+}
+button {
+    background-color: #eac9dc;
+    border: none;
+    height: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input{
+    background-color: #c8dfe7;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}

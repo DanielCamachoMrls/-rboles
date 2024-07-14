@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>CineWorld</h1><br>
+    <p>Descubre un Mundo de Cine al Alcance de tu Mano<br>
+    Bienvenido a CineWorld, tu destino definitivo para explorar y disfrutar del mejor cine.<br>
+    Con una extensa colección que abarca desde clásicos atemporales hasta los últimos<br>estrenos,
+    aquí encontrarás algo para cada amante del séptimo arte.</p>
+    <h2>Catálogo de Películas</h2>
+    <div class="form-container">
+        <form id="addMovieForm">
+            <input type="text" id="title" placeholder="Título" required>
+            <input type="text" id="genre" placeholder="Género" required>
+            <input type="number" id="year" placeholder="Año" required>
+            <button type="submit">Agregar Película</button>
+        </form>
+    </div>
+    <div class="search-container">
+        <p>Buscador de Peliculas</p>
+        <input type="text" id="searchTitle" placeholder="Buscar por título">
+        <button id="searchBtn">Buscar Película</button>
+        <div id="searchResult"></div>
+    </div>
+    <div class="catalog">
+        <h2>Películas en el Catálogo</h2>
+        <div id="movieList"></div>
+    </div>
+    <div class="min-max-container">
+        <button id="getMinBtn">Obtener Película con Menor Título</button>
+        <div id="minMovie"></div>
+        <br>
+        <button id="getMaxBtn">Obtener Película con Mayor Título</button>
+        <div id="maxMovie"></div>
+    </div>
+    <script type="module" src="src/controllers/script.js"></script>
+</body>
+</html>
